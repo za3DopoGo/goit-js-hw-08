@@ -51,6 +51,7 @@ body {
     align-items: center;
     box-sizing: border-box;
     opacity: 0; 
+    will-change: opacity;
 }
 
 .modal img {
