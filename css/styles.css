@@ -45,7 +45,7 @@ body {
     padding: 20px;
     width: 100%;
     height: 100%;
-    transition: opacity 5000ms limear; 
+    transition: opacity 500ms limear, transform 500ms linear; 
     display: flex;
     justify-content: center;
     align-items: center;
