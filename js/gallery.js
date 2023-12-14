@@ -97,9 +97,10 @@ const galleryList = document.querySelector('.gallery');
     }
 
     const largeImageURL = event.target.dataset.source;
+    const largeAlt = event.target.alt;
 
     const instance = basicLightbox.create(`
-        <img src="${largeImageURL}" class="largeImage" alt="Large Image">
+        <img src="${largeImageURL}" class="largeImage" alt="${largeAlt}">
     `);
 
     instance.show();
