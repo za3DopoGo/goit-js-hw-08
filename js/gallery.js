@@ -64,69 +64,6 @@ const images = [
     },
   ];
   
-//   const galleryList = document.querySelector('.gallery');
-
-// function createGallery(imagesArray) {
-//   const galleryItems = imagesArray.map(image => {
-//     const listItem = document.createElement('li');
-//     listItem.classList.add('gallery-item');
-//     const link = document.createElement('a');
-//     link.classList.add('gallery-link');
-//     link.href = image.original;
-//     const imageElement = document.createElement('img');
-//     imageElement.classList.add('gallery-image');
-//     imageElement.src = image.preview;
-//     imageElement.alt = image.description;
-//     imageElement.dataset.source = image.original;
-//     link.appendChild(imageElement);
-//     listItem.appendChild(link);
-//     return listItem;
-//   });
-//   galleryList.append(...galleryItems);
-// }
-
-// createGallery(images);
-
-// galleryList.addEventListener('click', onGalleryItemClick);
-
-// function onGalleryItemClick(event) {
-//   event.preventDefault();
-
-//   if (event.target.nodeName !== 'IMG') {
-//     return;
-//   }
-
-//   const largeImageURL = event.target.dataset.source;
-
-//   const modal = document.createElement('div');
-//   modal.classList.add('modal');
-
-//   const modalImage = document.createElement('img');
-//   modalImage.src = largeImageURL;
-//   modalImage.alt = 'Large Image';
-
-//   modal.appendChild(modalImage);
-
-//   modal.addEventListener('click', closeModal);
-
-//   window.addEventListener('keydown', onKeyPress);
-
-//   document.body.appendChild(modal);
-//   modal.classList.add('open');
-//   window.addEventListener('keydown', onModalClose);
-//   function closeModal() {
-//     modal.removeEventListener('click', closeModal);
-//     window.removeEventListener('keydown', onKeyPress);
-//     modal.remove();
-//   }
-
-//   function onKeyPress(event) {
-//     if (event.code === 'Escape') {
-//       closeModal();
-//     }
-//   }
-  
-// }
 const galleryList = document.querySelector('.gallery');
 
   function createGallery(imagesArray) {
